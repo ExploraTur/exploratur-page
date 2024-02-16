@@ -1,3 +1,4 @@
+import { Hero } from "@/components/Hero/hero";
 import { Header } from "@/components/header";
 
 export default function Main() {
@@ -5,6 +6,7 @@ export default function Main() {
     <>
     <Header />
     <main className='flex justify-center overflow-visible'>
+      <Hero />
     </main>
     </>
   );
