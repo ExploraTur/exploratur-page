@@ -1,7 +1,11 @@
-export default function Home() {
+import { Header } from "@/components/header";
+
+export default function Main() {
   return (
-    <main className='bg-submain'>
-      ExploreTour main page
+    <>
+    <Header />
+    <main className='flex justify-center overflow-visible'>
     </main>
+    </>
   );
 }
