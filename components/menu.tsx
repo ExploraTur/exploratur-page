@@ -1,3 +1,5 @@
+import { MenuIcon } from "lucide-react";
+
 const links = [
   {
     src: "/aventureiros",
@@ -17,12 +19,17 @@ const links = [
   },
 ];
 
+const mobile = true;
+
 export const Menu = () => {
   return (
-    <ul className="text-black flex gap-x-3 ">
-      {links.map((obj) => (
-        <li key={obj.linkName}>
-          <a className="p-2" href={obj.src}>
+    <ul className="text-xs md:text-base flex transition font-bold">
+      {links?.map((obj) => (
+        <li
+          key={obj.linkName}
+          className="hover:text-main hover:scale-105 transition"
+        >
+          <a className="px-1 md:px-2" href={obj.src}>
             {obj.linkName}
           </a>
         </li>
