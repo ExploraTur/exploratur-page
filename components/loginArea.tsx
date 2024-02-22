@@ -1,27 +1,53 @@
+"use client";
+
 import { User } from "lucide-react";
-import Link from "next/link";
+import { useMediaQuery } from "usehooks-ts";
+
+import { Button } from "./ui/button";
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
 
 export const LoginArea = () => {
+  const matches = useMediaQuery("(max-width: 768px)");
   const user = false;
 
   return (
     <div className="font-bold text-xs md:text-base text-white transition">
-      {!user && (
-        <div className="md:space-x-4 space-x-2">
-          <Link href="/login" className="hover:text-main-dark">
-            Entrar
-          </Link>
-          <Link
-            href="/register"
-            className="bg-main hover:bg-main-dark transition py-2 px-4 rounded-md"
+      {!user && !matches && (
+        <div className="space-x-2">
+          <Button
+            variant="ghost"
+            className="font-bold hover:text-main-dark"
           >
+            Entrar
+          </Button>
+          <Button variant="main" className="font-bold">
             Registrar-se
-          </Link>
+          </Button>
         </div>
       )}
-      {user && (
-        <div className='cursor-pointer p-1 border border-main rounded-full hover:bg-main/60 transition'>
-          <User className='text-main w-6 h-6 hover:text-white'/>
+      {matches && (
+        <div className="cursor-pointer p-1 rounded-md hover:bg-main/60 transition">
+          <DropdownMenu>
+            <DropdownMenuTrigger>
+              <User className="text-main w-8 h-8 hover:text-white" />
+            </DropdownMenuTrigger>
+            <DropdownMenuContent>
+              <DropdownMenuItem>
+                {!user && (
+                  <div>
+                    Entrar
+                  </div>
+                )}
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                {!user && (
+                  <div>
+                    Cadastrar-se
+                  </div>
+                )}
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       )}
     </div>
