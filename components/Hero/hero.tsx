@@ -11,9 +11,9 @@ export const Hero = () => {
           className="h-[800px] fixed inset-0 object-cover -z-10"
           alt="Imagem de fundo família explorando."
         />
-        <article className="z-10 text-white">
-          <div className='flex-col justify-center items-center'>
-            <span className="uppercase text-xs">
+        <article className="z-10 text-white text-center">
+          <div className='flex-col my-48 gap-y-3 flex justify-center items-center'>
+            <span className="uppercase text-sm">
               explore, aventure-se, descubra
             </span>
             <h1 className="font-bold text-5xl">
