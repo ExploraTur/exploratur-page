@@ -52,7 +52,7 @@ export const Menu = () => {
         </DropdownMenu>
       )}
       {!matches && (
-        <ul className="text-xs md:text-base flex transition font-bold">
+        <ul className="text-gray-600 text-xs md:text-base flex transition font-bold gap-x-2">
         {links?.map((obj) => (
           <li
             key={obj.linkName}
