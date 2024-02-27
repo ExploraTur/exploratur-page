@@ -13,9 +13,9 @@ export const SearchLabel = ({
   type,
 }: SearchLabelProps) => {
   return (
-    <div className="flex px-2 py-2 items-center bg-main-dark rounded-md">
+    <div className="flex px-2 py-2 items-center bg-main-dark rounded-md gap-x-2">
       <Icon size={30} fill="white"/>
-      <Input placeholder={placeholder} type={type === "number" ? "number" : "string"} className=' placeholder:text-gray-200 bg-transparent text-white  outline-none focus:border-none  border-none focus-visible:outline-none' />
+      <Input placeholder={placeholder} type={type === "number" ? "number" : "string"} className=' placeholder:text-gray-300 bg-transparent text-white  outline-none focus:border-none  border-none focus-visible:outline-none' />
     </div>
   );
 };
