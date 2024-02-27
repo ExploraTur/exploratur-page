@@ -8,7 +8,7 @@ export const Hero = () => {
       <div className="z-0">
         <Image
           src={bgPic}
-          className="h-[800px] fixed inset-0 object-cover -z-10"
+          className="h-[800px] absolute top-0 left-0 object-cover -z-10"
           alt="Imagem de fundo família explorando."
         />
         <article className="z-10 text-white text-center">
