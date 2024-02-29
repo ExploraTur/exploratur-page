@@ -4,7 +4,7 @@ import { OurServicesCard } from "./ourServicesCard";
 
 export const OurServices = () => {
   return (
-    <section className="mt-20 text-center">
+    <section className="my-20 text-center">
       <h2 className=" font-bold text-4xl text-submain">Nossos Serviços</h2>
       <p className="text-sm text-gray-500 mt-1">
         Fornecemos uma plataforma integrada que une aventureiros e condutores{" "}
