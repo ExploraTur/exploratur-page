@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 
 export const Gallery = () => {
   return (
-    <section className="text-center w-full py-20">
+    <section className="text-center w-full pt-20">
       <h3 className="font-bold text-4xl text-submain">Galeria</h3>
       <p className="text-gray-500 text-sm mt-1">
         Confira algumas das fotos das viagens de nossos clientes
