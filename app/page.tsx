@@ -1,6 +1,7 @@
 import { Feedbacks } from "@/components/Feedbacks/feedbacks";
 import { Gallery } from "@/components/Gallery/gallery";
 import { Hero } from "@/components/Hero/hero";
+import { JoinUs } from "@/components/JoinUs/joinUs";
 import { OurServices } from "@/components/OurServices/ourServices";
 import { SearchArea } from "@/components/SearchArea/SearchArea";
 import { Header } from "@/components/header";
@@ -15,6 +16,7 @@ export default function Main() {
       <OurServices />
       <Feedbacks />
       <Gallery />
+      <JoinUs />
     </main>
     </>
   );
