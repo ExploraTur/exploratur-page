@@ -41,9 +41,9 @@ export const Feedbacks = () => {
       <h3 className="font-bold text-4xl text-submain">
         O que dizem nossos exploradores?
       </h3>
-      <p className="text-gray-300 mt-4">Média de classificação dos clientes</p>
+      <p className="text-gray-300 text-sm mt-4">Média de classificação dos clientes</p>
       <Ratings />
-      <Carousel className="w-full">
+      <Carousel>
         <CarouselContent className='flex justify-start max-w-[70%] xl:max-w-[52%] mx-auto'>
           {usersInfo.map((user, i) => (
             <CarouselItem key={i} className='max-w-5xl'>
