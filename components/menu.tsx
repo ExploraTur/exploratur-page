@@ -56,7 +56,7 @@ export const Menu = () => {
         {links?.map((obj) => (
           <li
             key={obj.linkName}
-            className="hover:text-main hover:scale-105 transition"
+            className="hover:text-main-dark hover:scale-105 transition uppercase text-white"
           >
             <a className="px-1 md:px-2" href={obj.src}>
               {obj.linkName}
