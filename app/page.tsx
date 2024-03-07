@@ -4,6 +4,7 @@ import { Hero } from "@/components/Hero/hero";
 import { JoinUs } from "@/components/JoinUs/joinUs";
 import { OurServices } from "@/components/OurServices/ourServices";
 import { SearchArea } from "@/components/SearchArea/SearchArea";
+import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 
 export default function Main() {
@@ -18,6 +19,7 @@ export default function Main() {
       <Gallery />
       <JoinUs />
     </main>
+    <Footer />
     </>
   );
 }
