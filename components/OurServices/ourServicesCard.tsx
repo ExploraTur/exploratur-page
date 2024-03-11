@@ -21,7 +21,7 @@ export const OurServicesCard = ({
   ctaBtn,
 }: OurServicesCard) => {
   return (
-    <div className="rounded-lg min-h-[500px] min-w-[374px] relative shadow-md shadow-main-dark/30">
+    <div className="rounded-lg min-h-[500px] max-w-[374px] relative shadow-md shadow-main-dark/30">
       <Image
         src={src}
         fill
