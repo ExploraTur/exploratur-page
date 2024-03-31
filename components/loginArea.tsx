@@ -26,7 +26,7 @@ export const LoginArea = () => {
         </div>
       )}
       {matches && (
-        <div className="cursor-pointer p-3 mx-4 rounded-md hover:bg-main/60 transition">
+        <div className="cursor-pointer p-3 sm:mx-4 rounded-md hover:bg-main/60 transition">
           <DropdownMenu>
             <DropdownMenuTrigger>
               <User className="text-main w-8 h-8 hover:text-white" />

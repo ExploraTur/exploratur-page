@@ -2,7 +2,7 @@
 
 import { MenuIcon } from "lucide-react";
 import { useMediaQuery } from "usehooks-ts";
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "./ui/dropdown-menu";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 
 const links = [
   {
@@ -24,39 +24,38 @@ const links = [
 ];
 
 export const Menu = () => {
-  // TODO: add navigation menu from shacn-ui
   const matches = useMediaQuery("(max-width: 600px)");
 
   // TODO: refact visually all menu section
   return (
     <div>
       {matches && (
-        <DropdownMenu>
-          <DropdownMenuTrigger>
-            <MenuIcon />
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuItem>
-              Aventureiros
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              Condutores
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              Contato
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              Sobre nós
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-      )}
-      {!matches && (
-        <ul className="text-gray-600 text-xs md:text-base flex transition font-bold gap-x-2">
+        <Sheet>
+          <SheetTrigger>
+            <MenuIcon className='text-main-dark'/>
+          </SheetTrigger>
+          <SheetContent side='top'>
+          <ul className="text-main-dark text-lg flex flex-col items-center font-bold gap-y-4 uppercase">
         {links?.map((obj) => (
           <li
             key={obj.linkName}
-            className="hover:text-main-dark hover:scale-105 transition uppercase text-white md:text-sm"
+            className="hover:text-main transition hover:scale-105 md:text-sm"
+          >
+            <a className="px-1 md:px-2" href={obj.src}>
+              {obj.linkName}
+            </a>
+          </li>
+        ))}
+      </ul>
+          </SheetContent>
+        </Sheet>
+      )}
+      {!matches && (
+        <ul className="text-main-dark text-xs md:text-base flex transition font-bold gap-x-2">
+        {links?.map((obj) => (
+          <li
+            key={obj.linkName}
+            className="hover:text-white hover:scale-105 transition uppercase md:text-sm"
           >
             <a className="px-1 md:px-2" href={obj.src}>
               {obj.linkName}
