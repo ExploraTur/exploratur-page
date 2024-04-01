@@ -1,7 +1,5 @@
-import Image from "next/image";
 import { Button } from "../ui/button";
 import { GalleryPhoto } from "./galleryPhoto";
-import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 
 export const Gallery = () => {
   return (
