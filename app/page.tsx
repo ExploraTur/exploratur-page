@@ -11,7 +11,7 @@ export default function Main() {
   return (
     <>
     <Header />
-    <main className='flex flex-col items-center overflow-visible'>
+    <main>
       <Hero />
       <SearchArea />
       <OurServices />
