@@ -9,7 +9,8 @@ type Props = {
 const Layout = ({children} : Props) => {
   return (
     <>
-      <Header/>
+    {/* TODO: refactor this prop later to avoid passing it throught many components */}
+      <Header search/>
       <SearchArea />
       {children}
       <Footer/>

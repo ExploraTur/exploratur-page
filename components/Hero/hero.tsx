@@ -20,7 +20,7 @@ export const Hero = () => {
               Encontre sua <br /> próxima{" "}
               <span className="text-main">aventura</span>
             </h1>
-            <p className="max-w-[650px] bg-main-dark/20 rounded-sm p-2 mx-2 text-sm sm:text-base">
+            <p className="max-w-[650px] bg-main/50 rounded-sm p-2 mx-2 text-sm sm:text-base mb-20">
               De viajantes para viajantes, tornamos a descoberta de destinos tão
               emocionante quanto a própria viagem. Deixe-nos ser o guia da sua
               próxima aventura.

@@ -24,7 +24,7 @@ const links = [
 ];
 
 export const Menu = () => {
-  const matches = useMediaQuery("(max-width: 600px)");
+  const matches = useMediaQuery("(max-width: 650px)");
 
   // TODO: refact visually all menu section
   return (
