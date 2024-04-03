@@ -1,3 +1,4 @@
+import { FAQPage } from "@/components/FQA/askedQuestions";
 import { Feedbacks } from "@/components/Feedbacks/feedbacks";
 import { Gallery } from "@/components/Gallery/gallery";
 import { Hero } from "@/components/Hero/hero";
@@ -17,6 +18,7 @@ export default function Main() {
       <OurServices />
       <Feedbacks />
       <Gallery />
+      <FAQPage />
       <JoinUs />
     </main>
     <Footer />
