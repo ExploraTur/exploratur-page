@@ -1,18 +1,38 @@
 import Image from "next/image";
 
-import bgPic from "@/public/hero-image.jpg";
-
 export const Hero = () => {
   return (
     <section>
       <div className="z-0">
         <Image
-          src={bgPic}
+          priority
+          width="4954"
+          height="3303"
+          decoding="async"
+          data-nimg="1"
+          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-image.bd975f09.jpg&w=3840&q=75 1x"
+          sizes="
+            300×200,
+            1070×713,
+            1480×987,
+            1800×1200,
+            2070×1380,
+            2310×1540,
+            2530×1687,
+            2720×1813,
+            2910×1940,
+            3090×2060,
+            3250×2167,
+            3410×2273,
+            3560×2373,
+            3700×2467,
+            3840×2560
+          "
           className="h-[800px] absolute top-0 left-0 object-cover -z-10"
           alt="Imagem de fundo família explorando."
         />
         <article className="z-10 text-white text-center">
-          <div className='flex-col my-48 gap-y-2 flex justify-center items-center'>
+          <div className="flex-col my-48 gap-y-2 flex justify-center items-center">
             <span className="uppercase text-sm">
               explore, aventure-se, descubra
             </span>
