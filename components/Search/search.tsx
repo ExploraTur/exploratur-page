@@ -21,12 +21,12 @@ const mockDatabase = [
 
 export const Search = ({}: SearchProps) => {
   return (
-    <section className="border-y py-12 my-10 mx-auto max-w-7xl px-10 flex-wrap flex justify-center gap-x-5 gap-y-14">
+    <section className="border-y py-12 my-10 mx-auto max-w-7xl px-2 flex-wrap flex justify-center gap-x-5 gap-4 sm:gap-y-12">
       <div className="relative">
         <Button size='icon' variant='ghost' className='absolute z-10 top-4 right-4 bg-white text-main-dark hover:text-red-500 transition'>
           <Heart size={24}/>
         </Button>
-        <div className="relative w-[350px] h-[290px]">
+        <div className="relative max-w-[350px] h-[290px]">
           <Image
             src="/userPhotoTravel4.png"
             fill
@@ -36,7 +36,7 @@ export const Search = ({}: SearchProps) => {
         </div>
 
         <div className="flex justify-center">
-          <div className="-mt-3 z-10 relative bg-white p-4 shadow-lg shadow-main-dark/40 rounded-xl w-[340px]">
+          <div className="-mt-3 z-10 relative bg-white p-4 shadow-lg shadow-main-dark/40 rounded-xl max-w-[340px]">
             <div className="flex justify-between">
               <p className="font-bold text-main-dark text-lg">Pico do Arieiro</p>
               <div className="flex gap-1 items-center">
@@ -59,7 +59,7 @@ export const Search = ({}: SearchProps) => {
         <Button size='icon' variant='ghost' className='absolute z-10 top-4 right-4 bg-white text-main-dark hover:text-red-500 transition'>
           <Heart size={24}/>
         </Button>
-        <div className="relative w-[350px] h-[290px]">
+        <div className="relative max-w-[350px] h-[290px]">
           <Image
             src="/userPhotoTravel4.png"
             fill
@@ -69,7 +69,7 @@ export const Search = ({}: SearchProps) => {
         </div>
 
         <div className="flex justify-center">
-          <div className="-mt-3 z-10 relative bg-white p-4 shadow-lg shadow-main-dark/40 rounded-xl w-[340px]">
+          <div className="-mt-3 z-10 relative bg-white p-4 shadow-lg shadow-main-dark/40 rounded-xl max-w-[340px]">
             <div className="flex justify-between">
               <p className="font-bold text-main-dark text-lg">Pico do Arieiro</p>
               <div className="flex gap-1 items-center">
@@ -92,7 +92,7 @@ export const Search = ({}: SearchProps) => {
         <Button size='icon' variant='ghost' className='absolute z-10 top-4 right-4 bg-white text-main-dark hover:text-red-500 transition'>
           <Heart size={24}/>
         </Button>
-        <div className="relative w-[350px] h-[290px]">
+        <div className="relative max-w-[350px] h-[290px]">
           <Image
             src="/userPhotoTravel4.png"
             fill
@@ -102,7 +102,7 @@ export const Search = ({}: SearchProps) => {
         </div>
 
         <div className="flex justify-center">
-          <div className="-mt-3 z-10 relative bg-white p-4 shadow-lg shadow-main-dark/40 rounded-xl w-[340px]">
+          <div className="-mt-3 z-10 relative bg-white p-4 shadow-lg shadow-main-dark/40 rounded-xl max-w-[340px]">
             <div className="flex justify-between">
               <p className="font-bold text-main-dark text-lg">Pico do Arieiro</p>
               <div className="flex gap-1 items-center">
@@ -125,7 +125,7 @@ export const Search = ({}: SearchProps) => {
         <Button size='icon' variant='ghost' className='absolute z-10 top-4 right-4 bg-white text-main-dark hover:text-red-500 transition'>
           <Heart size={24}/>
         </Button>
-        <div className="relative w-[350px] h-[290px]">
+        <div className="relative max-w-[350px] h-[290px]">
           <Image
             src="/userPhotoTravel4.png"
             fill
@@ -135,7 +135,7 @@ export const Search = ({}: SearchProps) => {
         </div>
 
         <div className="flex justify-center">
-          <div className="-mt-3 z-10 relative bg-white p-4 shadow-lg shadow-main-dark/40 rounded-xl w-[340px]">
+          <div className="-mt-3 z-10 relative bg-white p-4 shadow-lg shadow-main-dark/40 rounded-xl max-w-[340px]">
             <div className="flex justify-between">
               <p className="font-bold text-main-dark text-lg">Pico do Arieiro</p>
               <div className="flex gap-1 items-center">
@@ -158,7 +158,7 @@ export const Search = ({}: SearchProps) => {
         <Button size='icon' variant='ghost' className='absolute z-10 top-4 right-4 bg-white text-main-dark hover:text-red-500 transition'>
           <Heart size={24}/>
         </Button>
-        <div className="relative w-[350px] h-[290px]">
+        <div className="relative max-w-[350px] h-[290px]">
           <Image
             src="/userPhotoTravel4.png"
             fill
@@ -168,7 +168,7 @@ export const Search = ({}: SearchProps) => {
         </div>
 
         <div className="flex justify-center">
-          <div className="-mt-3 z-10 relative bg-white p-4 shadow-lg shadow-main-dark/40 rounded-xl w-[340px]">
+          <div className="-mt-3 z-10 relative bg-white p-4 shadow-lg shadow-main-dark/40 rounded-xl max-w-[340px]">
             <div className="flex justify-between">
               <p className="font-bold text-main-dark text-lg">Pico do Arieiro</p>
               <div className="flex gap-1 items-center">
@@ -191,7 +191,7 @@ export const Search = ({}: SearchProps) => {
         <Button size='icon' variant='ghost' className='absolute z-10 top-4 right-4 bg-white text-main-dark hover:text-red-500 transition'>
           <Heart size={24}/>
         </Button>
-        <div className="relative w-[350px] h-[290px]">
+        <div className="relative max-w-[350px] h-[290px]">
           <Image
             src="/userPhotoTravel4.png"
             fill
@@ -201,7 +201,7 @@ export const Search = ({}: SearchProps) => {
         </div>
 
         <div className="flex justify-center">
-          <div className="-mt-3 z-10 relative bg-white p-4 shadow-lg shadow-main-dark/40 rounded-xl w-[340px]">
+          <div className="-mt-3 z-10 relative bg-white p-4 shadow-lg shadow-main-dark/40 rounded-xl max-w-[340px]">
             <div className="flex justify-between">
               <p className="font-bold text-main-dark text-lg">Pico do Arieiro</p>
               <div className="flex gap-1 items-center">
