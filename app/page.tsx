@@ -11,17 +11,17 @@ import { Header } from "@/components/header";
 export default function Main() {
   return (
     <>
-    <Header />
-    <main>
-      <Hero />
-      <SearchArea />
-      <OurServices />
-      <Feedbacks />
-      <Gallery />
-      <FAQPage />
-      <JoinUs />
-    </main>
-    <Footer />
+      <Header />
+      <main>
+        <Hero />
+        <SearchArea />
+        <OurServices />
+        <Feedbacks />
+        <Gallery />
+        <FAQPage />
+        <JoinUs />
+      </main>
+      <Footer />
     </>
   );
 }

@@ -8,6 +8,10 @@ body,
   height: 100%;
 }
 
+body {
+  background-color: #f7f7f7;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -22,9 +26,12 @@ body,
     --primary: 0 0% 9%;
     --primary-foreground: 0 0% 98%;
 
-    --main-color-light: 210 97% 58%;
-    --main-color-dark: 217 86% 31%;
-    --submain: 81 72% 63%;
+    --main-color-blue: 210 97% 58%;
+    --main-color-light: 184 52% 59%;
+    --main-color-dark: 188, 60%, 25%;
+    --secondary-color-light: 4 52% 59%;
+    --secondary-color-dark: 4 52% 59%;
+    --secondary-color: 6 59% 53%;
 
     --secondary: 0 0% 96.1%;
     --secondary-foreground: 0 0% 9%;

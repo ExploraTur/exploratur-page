@@ -4,13 +4,13 @@ export const Hero = () => {
   return (
     <section>
       <div className="z-0">
-        <Image
+        {/* <Image
           priority
           width="4954"
           height="3303"
           decoding="async"
           data-nimg="1"
-          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-image.bd975f09.jpg&w=3840&q=75 1x"
+          src="/hero-image.jpg"
           sizes="
             300×200,
             1070×713,
@@ -30,7 +30,7 @@ export const Hero = () => {
           "
           className="h-[800px] absolute top-0 left-0 object-cover -z-10"
           alt="Imagem de fundo família explorando."
-        />
+        /> */}
         <article className="z-10 text-white text-center">
           <div className="flex-col my-48 gap-y-2 flex justify-center items-center">
             <span className="uppercase text-sm">
