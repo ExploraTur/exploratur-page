@@ -38,7 +38,7 @@ const config = {
           dark: "hsl(var(--main-color-dark))",
         },
         secondaryColor: {
-          DEFAULT: "hsl(var(--secondaryColor))",
+          DEFAULT: "hsl(var(--secondary-color))",
           light: "hsl(var(--secondary-color-light))",
           dark: "hsl(var(--secondary-color-dark))",
         },
