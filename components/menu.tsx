@@ -51,11 +51,11 @@ export const Menu = () => {
         </Sheet>
       )}
       {!matches && (
-        <ul className="py-4 px-6 rounded-full text-white flex transition font-bold gap-x-6">
+        <ul className="text-main-dark text-xs md:text-base flex transition font-bold gap-x-2">
         {links?.map((obj) => (
           <li
             key={obj.linkName}
-            className="hover:scale-110 transition  md:text-sm"
+            className="hover:scale-110 transition uppercase md:text-sm"
           >
             <a className="px-1 md:px-2" href={obj.src}>
               {obj.linkName}

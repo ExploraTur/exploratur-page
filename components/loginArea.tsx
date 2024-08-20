@@ -25,7 +25,7 @@ interface LoginAreaProps {
   search?: boolean;
 }
 
-export const LoginArea = ({ search }: LoginAreaProps) => {
+export const LoginArea = ({search} : LoginAreaProps) => {
   const matches = useMediaQuery("(max-width: 860px)");
 
   return (
@@ -49,12 +49,7 @@ export const LoginArea = ({ search }: LoginAreaProps) => {
                     afterSignInUrl="/"
                     afterSignUpUrl="/"
                   >
-                    <Button
-                      variant="ghost"
-                      className={`${search && "text-main"}`}
-                    >
-                      Entrar
-                    </Button>
+                    <Button variant="ghost" className={`${search && "text-main"}`}>Entrar</Button>
                   </SignInButton>
                   <SignUpButton>
                     <Button variant="main">Cadastrar-se</Button>

@@ -33,15 +33,10 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         main: {
-          DEFAULT: "hsl(var(--main-color-blue))",
-          light: "hsl(var(--main-color-light))",
+          DEFAULT: "hsl(var(--main-color-light))",
           dark: "hsl(var(--main-color-dark))",
         },
-        secondaryColor: {
-          DEFAULT: "hsl(var(--secondaryColor))",
-          light: "hsl(var(--secondary-color-light))",
-          dark: "hsl(var(--secondary-color-dark))",
-        },
+        submain: "hsl(var(--submain))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
