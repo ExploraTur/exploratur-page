@@ -1,49 +1,50 @@
 import Image from "next/image";
-import { Button } from "../ui/button";
-import { Apple } from "lucide-react";
 
 export const Hero = () => {
   return (
     <section>
-      <div>
-        <article className="text-center">
-          <div className="mt-32">
-            <h1 className="font-semibold text-6xl">
+      <div className="z-0">
+        {/* <Image
+          priority
+          width="4954"
+          height="3303"
+          decoding="async"
+          data-nimg="1"
+          src="/hero-image.jpg"
+          sizes="
+            300×200,
+            1070×713,
+            1480×987,
+            1800×1200,
+            2070×1380,
+            2310×1540,
+            2530×1687,
+            2720×1813,
+            2910×1940,
+            3090×2060,
+            3250×2167,
+            3410×2273,
+            3560×2373,
+            3700×2467,
+            3840×2560
+          "
+          className="h-[800px] absolute top-0 left-0 object-cover -z-10"
+          alt="Imagem de fundo família explorando."
+        /> */}
+        <article className="z-10 text-white text-center">
+          <div className="flex-col my-48 gap-y-2 flex justify-center items-center">
+            <span className="uppercase text-sm">
+              explore, aventure-se, descubra
+            </span>
+            <h1 className="font-bold text-4xl md:text-5xl">
               Encontre sua <br /> próxima{" "}
-              <span className="text-secondaryColor">aventura</span>
+              <span className="text-main">aventura</span>
             </h1>
-            <p className="mt-4 rounded-sm p-2 mx-2 text-sm sm:text-base mb-10">
-              Te ajudamos a tornar a procura de aventuras tão emocionante quanto
-              a própria viagem.
+            <p className="max-w-[650px] bg-main/50 rounded-sm p-2 mx-2 text-sm sm:text-base mb-20">
+              De viajantes para viajantes, tornamos a descoberta de destinos tão
+              emocionante quanto a própria viagem. Deixe-nos ser o guia da sua
+              próxima aventura.
             </p>
-          </div>
-
-          <div className="mt-2 flex justify-center items-center gap-7">
-            <div className="rounded-full bg-main-dark text-main-light px-12 py-5 flex gap-3">
-              <Image
-                src="/appleIcon.svg"
-                width={34}
-                height={34}
-                alt="Logo da Apple"
-              />
-              <div className="flex flex-col">
-                <span>Baixe em</span>
-                <span className="font-bold">App Store</span>
-              </div>
-            </div>
-
-            <div className="rounded-full bg-main-dark text-main-light px-12 py-5 flex gap-4">
-              <Image
-                src="/googlePlay.svg"
-                width={34}
-                height={34}
-                alt="Logo da Apple"
-              />
-              <div className="flex flex-col text-left">
-                <span>Baixe em</span>
-                <span className="font-bold">Google Play</span>
-              </div>
-            </div>
           </div>
         </article>
       </div>
