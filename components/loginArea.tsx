@@ -30,11 +30,12 @@ export const LoginArea = ({search} : LoginAreaProps) => {
 
   return (
     <div className="">
-      <div className="flex items-center justify-between text-xs md:text-base text-white transition">
+      <div className="flex items-center justify-between transition">
         <ClerkLoading>
-          <Loader className="h-5 w-5 text-main animate-spin" />
+          <Loader className="h-6 w-6 text-main animate-spin" />
         </ClerkLoading>
         <ClerkLoaded>
+      <div className="absolut" />
           <div className="flex gap-x-1">
             <div className="px-2">
               <SignedIn>
@@ -49,7 +50,7 @@ export const LoginArea = ({search} : LoginAreaProps) => {
                     afterSignInUrl="/"
                     afterSignUpUrl="/"
                   >
-                    <Button variant="ghost" className={`${search && "text-main"}`}>Entrar</Button>
+                    <Button variant="outline" className={`border-none font-bold bg-transparent ${search && "text-main"}`}>Entrar</Button>
                   </SignInButton>
                   <SignUpButton>
                     <Button variant="main">Cadastrar-se</Button>

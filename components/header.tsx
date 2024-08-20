@@ -8,9 +8,8 @@ interface HeaderProps {
 
 export const Header = ({ search }: HeaderProps) => {
   return (
-    <header className="relative w-full px-2 z-20">
-      <div className="absolute bg-mai inset-0" />
-      <div className="relative z-10 max-w-[1280px] flex h-20 justify-between items-center mx-auto">
+    <header className="relative top-2 w-full rounded-full px-2 z-20 bg-white/80">
+      <div className="relative z-10 max-w-[1440px] flex h-20 justify-between items-center mx-auto px-4">
         <Logo />
         <Menu />
         <LoginArea search={search}/>
