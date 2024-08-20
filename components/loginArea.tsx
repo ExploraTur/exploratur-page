@@ -29,8 +29,8 @@ export const LoginArea = ({ search }: LoginAreaProps) => {
   const matches = useMediaQuery("(max-width: 860px)");
 
   return (
-    <div>
-      <div className="flex items-center justify-between text-xs md:text-base  transition">
+    <div className="">
+      <div className="flex items-center justify-between text-xs md:text-base text-white transition">
         <ClerkLoading>
           <Loader className="h-5 w-5 text-main animate-spin" />
         </ClerkLoading>
