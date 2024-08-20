@@ -10,7 +10,7 @@ export const Hero = () => {
           height="3303"
           decoding="async"
           data-nimg="1"
-          src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhero-image.bd975f09.jpg&w=3840&q=75 1x"
+          src="/hero-image.jpg"
           sizes="
             300×200,
             1070×713,
