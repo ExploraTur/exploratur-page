@@ -9,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "ExploraTur",
+  title: "Explorer",
   description: "Aventure-se conosco e descubra as belezas do mundo.",
 };
 
