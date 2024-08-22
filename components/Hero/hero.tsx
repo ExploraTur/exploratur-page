@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Hero = () => {
   return (
-    <section>
+    <section className="my-64">
       <div>
         <Image
           priority
@@ -32,7 +32,7 @@ export const Hero = () => {
           alt="Imagem de fundo família explorando."
         />
         <article className="z-10 text-white text-center">
-          <div className="flex-col my-52 flex justify-center items-center">
+          <div className="flex-col flex justify-center items-center">
             <span className="uppercase font-bold text-xl underline underline-offset-4 decoration-submain">
               explore, aventure-se, descubra
             </span>
