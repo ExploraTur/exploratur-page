@@ -24,7 +24,8 @@ const config = {
     },
     extend: {
       backgroundImage: {
-        'hero-pattern' : "url(/hero-image.jpg)"
+        'hero-pattern' : "url(/hero-image.jpg)",
+        'line-pattern' : "url(/linePattern.png)"
       },
       colors: {
         border: "hsl(var(--border))",
