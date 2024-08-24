@@ -1,9 +1,10 @@
+import { Logo } from "./logo";
+
 export const Footer = () => {
   return (
-    // TODO: transform
     <footer className="max-w-7xl mx-auto">
-      <div className="flex-wrap flex items-center justify-between py-10 gap-10 mx-10 border-y">
-        <div> 
+      <div className="flex-wrap flex items-center justify-between py-20 gap-10 mx-10 border-y">
+        <div>
           <h4 className="font-bold py-1 mb-2 border-b">Ajuda</h4>
           <ul className="text-gray-500">
             <li>lorem</li>
@@ -28,8 +29,9 @@ export const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="text-center py-4 mx-2">
-        <p>© 2024 ExploraTur, Inc. Todos os direitos reservados </p>
+      <div className="text-center py-14 mx-2 flex flex-col items-center justify-center">
+        <Logo />
+        <p className="font-bold text-gray-700"> © 2024 , Inc. Todos os direitos reservados </p>
       </div>
     </footer>
   );
