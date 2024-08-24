@@ -14,7 +14,7 @@ export const CommentArea = ({
   return (
     <article className="bg-white relative rounded-lg px-6 min-h-min py-10 sm:py-20">
       <div className="flex flex-col justify-center items-center gap-y-4 px-4">
-      <div className="z-0 absolute top-0 left-0 h-screen rotate-90 opacity-5 w-full bg-line-pattern bg-cover" />
+      <div className="z-0 absolute top-0 left-0 h-full opacity-5 w-full bg-line-pattern bg-contain" />
 
         <div className='relative h-[170px] w-[170px]'>
           <Image
