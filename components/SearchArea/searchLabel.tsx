@@ -3,7 +3,6 @@ import { PiUsersLight } from "react-icons/pi";
 import { IconType } from "react-icons/lib";
 
 import { Input } from "../ui/input";
-import { cn } from "@/lib/utils";
 
 const iconMap = {
   CiCalendarDate,
