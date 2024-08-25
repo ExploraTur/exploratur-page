@@ -25,17 +25,16 @@ interface LoginAreaProps {
   search?: boolean;
 }
 
-export const LoginArea = ({search} : LoginAreaProps) => {
+export const LoginArea = ({ search }: LoginAreaProps) => {
   const matches = useMediaQuery("(max-width: 860px)");
 
   return (
-    <div className="">
+    <div className="z-20">
       <div className="flex items-center justify-between transition">
         <ClerkLoading>
           <Loader className="h-6 w-6 text-main animate-spin" />
         </ClerkLoading>
         <ClerkLoaded>
-      <div className="absolut" />
           <div className="flex gap-x-1">
             <div className="px-2">
               <SignedIn>
@@ -50,7 +49,14 @@ export const LoginArea = ({search} : LoginAreaProps) => {
                     afterSignInUrl="/"
                     afterSignUpUrl="/"
                   >
-                    <Button variant="outline" className={`border-none font-bold bg-transparent ${search && "text-main"}`}>Entrar</Button>
+                    <Button
+                      variant="outline"
+                      className={`border-none font-bold bg-transparent ${
+                        search && "text-main"
+                      }`}
+                    >
+                      Entrar
+                    </Button>
                   </SignInButton>
                   <SignUpButton>
                     <Button variant="main">Cadastrar-se</Button>

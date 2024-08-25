@@ -28,7 +28,7 @@ export const Hero = () => {
             3700×2467,
             3840×2560
           "
-          className="h-screen absolute rounded-br-3xl rounded-bl-3xl top-0 left-0 object-cover -z-10"
+          className="h-full absolute rounded-br-3xl rounded-bl-3xl top-0 left-0 object-cover -z-10"
           alt="Imagem de fundo família explorando."
         />
         <article className="z-10 text-white text-center">
