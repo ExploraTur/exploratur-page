@@ -7,7 +7,7 @@ import { montserrat } from "@/app/layout";
 
 export const OurServices = () => {
   return (
-    <section className="max-w-[1440px] text-center mx-auto pt-48 pb-32">
+    <section className="max-w-[1440px] text-center mx-auto pb-32">
       <h2 className={`${montserrat.className} font-bold text-5xl text-submain`}>
         Nossos Serviços
       </h2>

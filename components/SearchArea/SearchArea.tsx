@@ -4,7 +4,7 @@ import { CiSearch } from "react-icons/ci";
 
 export const SearchArea = () => {
   return (
-    <section className="w-full flex justify-center pt-26">
+    <section className="w-full flex justify-center pt-26 mb-32">
       <div className="bg-white/90 max-w-[1440px] flex justify-between items-center gap-x-3 mx-4 py-6 px-8 rounded-lg shadow-lg shadow-main/20">
         <div>
           <h3 className="text-gray-600 font-medium">Localidade</h3>

@@ -14,12 +14,16 @@ const links = [
     linkName: "Condutores",
   },
   {
-    src: "/contato",
-    linkName: "Contato",
-  },
-  {
     src: "/sobre",
     linkName: "Sobre nós",
+  },
+  {
+    src: "/galley",
+    linkName: "Galeria",
+  },
+  {
+    src: "/faq",
+    linkName: "FAQ",
   },
 ];
 
@@ -50,7 +54,7 @@ export const Menu = () => {
         </Sheet>
       )}
       {!matches && (
-        <ul className="text-xs md:text-base flex transition font-bold gap-x-2">
+        <ul className="text-sm lg:text-base text-gray-700 md:text-base flex transition font-semibold gap-x-2">
           {links?.map((obj) => (
             <li key={obj.linkName}>
               <a

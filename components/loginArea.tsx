@@ -36,7 +36,7 @@ export const LoginArea = ({ search }: LoginAreaProps) => {
         </ClerkLoading>
         <ClerkLoaded>
           <div className="flex gap-x-1">
-            <div className="px-2">
+            <div>
               <SignedIn>
                 <UserButton afterSignOutUrl="/" />
               </SignedIn>

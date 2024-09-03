@@ -31,7 +31,7 @@ export const Hero = () => {
           className="h-full absolute rounded-br-3xl rounded-bl-3xl top-0 left-0 object-cover -z-10"
           alt="Imagem de fundo família explorando."
         />
-        <article className="z-10 text-white text-center">
+        <article className="text-white text-center">
           <div className="flex-col flex justify-center items-center">
             <span className="uppercase font-bold text-xl underline underline-offset-4 decoration-submain">
               explore, aventure-se, descubra
