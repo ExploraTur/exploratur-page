@@ -1,8 +1,8 @@
 "use client";
 
 import { MenuIcon } from "lucide-react";
-import { useMediaQuery } from "usehooks-ts";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import Link from "next/link";
 
 const links = [
   {
@@ -18,43 +18,40 @@ const links = [
     linkName: "Sobre nós",
   },
   {
-    src: "/galley",
+    src: "#gallery",
     linkName: "Galeria",
   },
   {
-    src: "/faq",
+    src: "#faq",
     linkName: "FAQ",
   },
 ];
 
 export const Menu = () => {
-  const matches = useMediaQuery("(max-width: 650px)");
+  const { matches: isScreenBellow600px } = matchMedia("(max-width: 600px)");
 
   return (
-    <div>
-      {matches && (
+    <nav>
+      {isScreenBellow600px ? (
         <Sheet>
           <SheetTrigger>
             <MenuIcon className="text-main-dark" />
           </SheetTrigger>
           <SheetContent side="top">
             <ul className="text-main-dark text-lg flex flex-col items-center font-bold gap-y-4 uppercase">
-              {links?.map((obj) => (
+              {links?.map((link) => (
                 <li
-                  key={obj.linkName}
+                  key={link.linkName}
                   className="hover:text-main transition hover:scale-105 md:text-sm"
                 >
-                  <a className="px-1 md:px-2" href={obj.src}>
-                    {obj.linkName}
-                  </a>
+                  <Link href={link.src}>{link.linkName}</Link>
                 </li>
               ))}
             </ul>
           </SheetContent>
         </Sheet>
-      )}
-      {!matches && (
-        <ul className="text-sm lg:text-base text-gray-700 md:text-base flex transition font-semibold gap-x-2">
+      ) : (
+        <ul className="sm:text-xs lg:text-base text-gray-700 md:text-base flex transition font-semibold gap-x-2">
           {links?.map((obj) => (
             <li key={obj.linkName}>
               <a
@@ -67,6 +64,6 @@ export const Menu = () => {
           ))}
         </ul>
       )}
-    </div>
+    </nav>
   );
 };
