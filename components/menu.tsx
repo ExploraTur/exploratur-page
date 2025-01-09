@@ -35,7 +35,7 @@ export const Menu = () => {
       {isScreenBellow600px ? (
         <Sheet>
           <SheetTrigger>
-            <MenuIcon className="text-main-dark" />
+            <MenuIcon className="text-main-dark mt-2" />
           </SheetTrigger>
           <SheetContent side="top">
             <ul className="text-main-dark text-lg flex flex-col items-center font-bold gap-y-4 uppercase">
@@ -51,15 +51,13 @@ export const Menu = () => {
           </SheetContent>
         </Sheet>
       ) : (
-        <ul className="sm:text-xs lg:text-base text-gray-700 md:text-base flex transition font-semibold gap-x-2">
+        <ul className="text-xs md:text-sm lg:text-base text-gray-700  flex transition font-semibold gap-x-2">
           {links?.map((obj) => (
-            <li key={obj.linkName}>
-              <a
-                className="hover:text-main transition px-1 md:px-2"
-                href={obj.src}
-              >
-                {obj.linkName}
-              </a>
+            <li
+              key={obj.linkName}
+              className="hover:text-main transition px-1"
+            >
+              <Link href={obj.src}>{obj.linkName}</Link>
             </li>
           ))}
         </ul>
