@@ -28,21 +28,18 @@ export const Hero = () => {
             3700×2467,
             3840×2560
           "
-          className="h-full absolute rounded-br-3xl rounded-bl-3xl top-0 left-0 object-cover -z-10"
-          alt="Imagem de fundo família explorando."
+          className="h-full absolute rounded-b-3xl top-0 left-0 object-cover -z-20"
+          alt="Imagem de fundo família admirando uma paisagem com vista para um lago."
         />
         <article className="text-white text-center">
           <div className="flex-col flex justify-center items-center">
-            <span className="uppercase font-bold text-xl underline underline-offset-4 decoration-submain">
+            <span className="uppercase font-bold text-sm sm:text-base lg:text-xl underline underline-offset-4 decoration-submain">
               explore, aventure-se, descubra
             </span>
-            <h1 className="font-bold text-7xl">
+            <h1 className="font-bold text-4xl sm:text-5xl lg:text-6xl">
               Encontre sua <br /> próxima{" "}
               <span className="text-submain">aventura</span>
             </h1>
-            {/* <p className="max-w-[700px] text-xl bg-main/10 rounded-2xl p-4 mt-10">
-              De viajantes para viajantes, tornamos a descoberta de destinos tão emocionante quanto a própria viagem. Deixe-nos ser o guia da sua próxima aventura.
-            </p> */}
           </div>
         </article>
       </div>
