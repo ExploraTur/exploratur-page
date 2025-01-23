@@ -3,6 +3,7 @@
 import { MenuIcon } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import Link from "next/link";
+import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 const links = [
   {
@@ -28,11 +29,11 @@ const links = [
 ];
 
 export const Menu = () => {
-  const { matches: isScreenBellow600px } = matchMedia("(max-width: 600px)");
+  const isBelow600px = useMediaQuery("(max-width: 600px)");
 
   return (
     <nav>
-      {isScreenBellow600px ? (
+      {isBelow600px ? (
         <Sheet>
           <SheetTrigger>
             <MenuIcon className="text-main-dark mt-2" />
@@ -53,10 +54,7 @@ export const Menu = () => {
       ) : (
         <ul className="text-xs md:text-sm lg:text-base text-gray-700  flex transition font-semibold gap-x-2">
           {links?.map((obj) => (
-            <li
-              key={obj.linkName}
-              className="hover:text-main transition px-1"
-            >
+            <li key={obj.linkName} className="hover:text-main transition px-1">
               <Link href={obj.src}>{obj.linkName}</Link>
             </li>
           ))}

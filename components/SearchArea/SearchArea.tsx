@@ -4,16 +4,16 @@ import { CiSearch } from "react-icons/ci";
 
 export const SearchArea = () => {
   return (
-    <section className="w-full flex justify-center pt-26 mb-32">
-      <div className="bg-white/90 max-w-[1440px] flex justify-between items-center gap-x-3 mx-4 py-6 px-8 rounded-lg shadow-lg shadow-main/20">
+    <section className="hidden sm:flex justify-center">
+      <div className="bg-white/90 max-w-[1440px] flex justify-between items-center mx-4 p-6 rounded-lg shadow-lg shadow-main/20">
         <div>
-          <h3 className="text-gray-600 font-medium">Localidade</h3>
-          <SearchLabel placeholder="Onde quer ir?" iconName={"CiLocationOn"} />
+          <h3 className="text-gray-600 font-medium">Para onde</h3>
+          <SearchLabel placeholder="Onde quer ir" iconName={"CiLocationOn"} />
         </div>
         <div>
-          <h3 className="text-gray-600 font-medium">Data</h3>
+          <h3 className="text-gray-600 font-medium">Quando</h3>
           <SearchLabel
-            placeholder="Quando quer ir?"
+            placeholder="Data"
             iconName={"CiCalendarDate"}
             // type="date"
           />
