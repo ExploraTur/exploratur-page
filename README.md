@@ -3,10 +3,10 @@
 
 
 
-## Sobre
+### Sobre (Técnico)
 
-Este projeto é feito usando [Next.js](https://nextjs.org/) usando como ferramenta de estilização o [TailwindCss](https://tailwindcss.com/) e também a biblioteca de componentes [Shadcn.Ui](https://tailwindcss.com/).
+Este projeto é feito usando [Next.js](https://nextjs.org/) estilizado com [TailwindCss](https://tailwindcss.com/) sobre a [Shadcn.Ui](https://tailwindcss.com/).
 
 
-## Desenvolvedores
+### Desenvolvedores
 [Wellington Lima](https://github.com/zWellingtonLima) - Frontend
