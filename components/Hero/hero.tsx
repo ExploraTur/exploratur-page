@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { SearchArea } from "../SearchArea/SearchArea";
 
 export const Hero = () => {
   return (
-    <section className="my-64">
+    <section className="mt-64 mb-44 md:mb-52 lg:mb-40 2xl:mb-60">
       <div>
         <Image
           priority
@@ -32,7 +33,7 @@ export const Hero = () => {
           alt="Imagem de fundo família admirando uma paisagem com vista para um lago."
         />
         <article className="text-white text-center">
-          <div className="flex-col flex justify-center items-center">
+          <div className="flex-col flex justify-center items-center mb-40 ">
             <span className="uppercase font-bold text-sm sm:text-base lg:text-xl underline underline-offset-4 decoration-submain">
               explore, aventure-se, descubra
             </span>
@@ -41,6 +42,7 @@ export const Hero = () => {
               <span className="text-submain">aventura</span>
             </h1>
           </div>
+          <SearchArea />
         </article>
       </div>
     </section>
