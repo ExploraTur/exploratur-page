@@ -7,20 +7,22 @@ import { montserrat } from "@/app/layout";
 
 export const OurServices = () => {
   return (
-    <section className="max-w-[1440px] text-center mx-auto pb-32">
-      <h2 className={`${montserrat.className} font-bold text-5xl text-submain`}>
+    <section className="max-w-[1200px] text-center mx-auto px-2 ">
+      <h2
+        className={`${montserrat.className} uppercase font-bold underline text-submain`}
+      >
         Nossos Serviços
       </h2>
-      <p className="text-gray-600 mt-6">
+      <p className="text-gray-600 mt-4">
         Seja você um <strong>explorador</strong> ou{" "}
         <strong>condutor de viagens</strong>, fornecemos uma plataforma
         integrada com serviços específicos às suas necessidades.
       </p>
 
-      <article className="mx-8 my-20">
+      <article className="mx-2 my-10">
         <div
           id="#explorers"
-          className="flex flex-wrap items-center justify-center gap-20"
+          className="flex flex-wrap items-center justify-center gap-10"
         >
           <OurServicesCard
             src={"/bg.png"}
@@ -34,7 +36,7 @@ export const OurServices = () => {
 
           <div className="max-w-[550px] text-left flex gap-y-6 flex-col items-center justify-around">
             <h3
-              className={`${montserrat.className} relative text-2xl self-start font-bold text-neutral-700 mb-12`}
+              className={`${montserrat.className} relative text-xl self-start font-bold text-neutral-700 mb-4`}
             >
               Nossos serviços para Aventureiros
               <span className="w-16 h-2 bg-main rounded-full absolute -bottom-4 left-0" />

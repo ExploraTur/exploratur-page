@@ -11,11 +11,11 @@ export const FAQPage = () => {
     <section className="py-20 border-y px-2 sm:px-4 flex-col flex sm:flex-row max-w-6xl items-center justify-between mx-auto">
       <div className="text-center sm:text-start">
         <h2
-          className={`${montserrat.className} font-bold text-5xl text-submain`}
+          className={`${montserrat.className} font-bold text-4xl text-submain`}
         >
           Perguntas Frequentes
         </h2>
-        <p className="text-gray-700 mt-2">FAQ</p>
+        <p className="mt-2 font-bold">FAQ</p>
       </div>
       <Accordion type="single" collapsible className="w-[90%] sm:w-[50%]">
         <AccordionItem value="item-1">
