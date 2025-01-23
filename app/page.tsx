@@ -14,7 +14,6 @@ export default function Main() {
       <Header />
       <main>
         <Hero />
-        <SearchArea />
         <OurServices />
         <Feedbacks />
         <Gallery />
