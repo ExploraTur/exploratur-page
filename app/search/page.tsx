@@ -1,11 +1,11 @@
-import { Search } from "@/components/Search/search";
+import { SearchLayout } from "@/src/modules/search/layout/search-layout";
 
-const SearchPage = () => {
+const Search = () => {
   return (
     <>
-      <Search />
+      <SearchLayout />
     </>
-  )
-}
+  );
+};
 
-export default SearchPage;
+export default Search;

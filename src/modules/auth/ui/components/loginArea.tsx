@@ -11,13 +11,13 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 
-import { Button } from "./ui/button";
+import { Button } from "../../../../../components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "./ui/dropdown-menu";
+} from "../../../../../components/ui/dropdown-menu";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 
 // TODO: refactor this prop later to avoid passing it throught many components

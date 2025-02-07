@@ -4,7 +4,7 @@ import { BiLogIn } from "react-icons/bi";
 import Link from "next/link";
 import { IconType } from "react-icons/lib";
 
-import { Button } from "../ui/button";
+import { Button } from "../../../../../../components/ui/button";
 
 const iconMap = {
   FaPersonWalkingLuggage,

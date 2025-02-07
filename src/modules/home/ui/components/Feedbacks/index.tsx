@@ -6,7 +6,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "../ui/carousel";
+} from "../../../../../../components/ui/carousel";
 import { montserrat } from "@/app/layout";
 
 const usersInfo = [

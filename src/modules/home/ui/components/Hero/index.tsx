@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { SearchArea } from "../SearchArea/SearchArea";
+import { SearchArea } from "@/src/modules/search/ui/components/SearchArea";
 
 export const Hero = () => {
   return (
@@ -29,7 +29,7 @@ export const Hero = () => {
             3700×2467,
             3840×2560
           "
-          className="h-full absolute rounded-b-3xl top-0 left-0 object-cover -z-20"
+          className="max-h-[900px] h-[95%] absolute rounded-b-3xl top-0 left-0 object-cover -z-20"
           alt="Imagem de fundo família admirando uma paisagem com vista para um lago."
         />
         <article className="text-white text-center">

@@ -1,32 +1,14 @@
 "use client";
 
 import { MenuIcon } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "../../../../../../components/ui/sheet";
 import Link from "next/link";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
-
-const links = [
-  {
-    src: "#explorers",
-    linkName: "Aventureiro",
-  },
-  {
-    src: "#drivers",
-    linkName: "Condutores",
-  },
-  {
-    src: "/sobre",
-    linkName: "Sobre nós",
-  },
-  {
-    src: "#gallery",
-    linkName: "Galeria",
-  },
-  {
-    src: "#faq",
-    linkName: "FAQ",
-  },
-];
+import { links } from "./menuItems";
 
 export const Menu = () => {
   const isBelow600px = useMediaQuery("(max-width: 600px)");

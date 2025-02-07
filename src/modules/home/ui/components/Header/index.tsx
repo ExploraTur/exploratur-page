@@ -1,6 +1,6 @@
 import { Logo } from "./logo";
 import { Menu } from "./menu";
-import { LoginArea } from "./loginArea";
+import { LoginArea } from "../../../../auth/ui/components/loginArea";
 
 interface HeaderProps {
   search?: boolean;

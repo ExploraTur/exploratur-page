@@ -1,4 +1,4 @@
-import { Logo } from "./logo";
+import { Logo } from "../home/ui/components/Header/logo";
 
 export const Footer = () => {
   return (
@@ -31,7 +31,10 @@ export const Footer = () => {
       </div>
       <div className="text-center py-14 mx-2 flex flex-col items-center justify-center">
         <Logo />
-        <p className="font-bold text-gray-700"> © 2024 , Inc. Todos os direitos reservados </p>
+        <p className="font-bold text-gray-700">
+          {" "}
+          © 2024 , Inc. Todos os direitos reservados{" "}
+        </p>
       </div>
     </footer>
   );

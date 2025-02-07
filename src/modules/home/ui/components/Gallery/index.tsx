@@ -1,5 +1,5 @@
 import { montserrat } from "@/app/layout";
-import { Button } from "../ui/button";
+import { Button } from "../../../../../../components/ui/button";
 import { GalleryPhoto } from "./galleryPhoto";
 
 export const Gallery = () => {
