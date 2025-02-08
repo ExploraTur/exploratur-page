@@ -4,7 +4,7 @@ import { BiLogIn } from "react-icons/bi";
 import Link from "next/link";
 import { IconType } from "react-icons/lib";
 
-import { Button } from "../../../../../../components/ui/button";
+import { Button } from "@/components/ui/button";
 
 const iconMap = {
   FaPersonWalkingLuggage,
@@ -41,9 +41,7 @@ export const OurServicesCard = ({
         className="rounded-lg -z-10 absolute bg-cover"
       />
       <div className="px-10 text-left text-white h-full flex flex-col justify-end gap-2 pb-4">
-        <h3 className="font-bold text-xl border-b-2 border-submain">
-          {title}
-        </h3>
+        <h3 className="font-bold text-xl border-b-2 border-submain">{title}</h3>
         <p className="max-w-[300px] font-semibold">{subtitle}</p>
         <Button variant="main" className="gap-x-2 rounded-lg">
           <Link href={url}>{ctaBtn}</Link>
