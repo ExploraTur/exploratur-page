@@ -1,12 +1,12 @@
-import { Button } from "../../../../../../components/ui/button";
+import { Button } from "@/components/ui/button";
 import { Subtitle } from "./search-area-subtitle";
 import { SearchLabel } from "./search-label";
 import { CiSearch } from "react-icons/ci";
 
 export const SearchArea = () => {
   return (
-    <section className="hidden sm:flex justify-center">
-      <div className="bg-white/90 max-w-[1000px] flex flex-1 justify-between items-center mx-4 p-6 rounded-lg shadow-lg shadow-main/20 text-left">
+    <section className="hidden sm:flex justify-center -mt-20 pb-32">
+      <div className="bg-white/95 max-w-[1000px] flex flex-1 justify-between items-center mx-4 p-6 rounded-lg shadow-lg shadow-main/20 text-left z-20">
         <div className="flex-1">
           <Subtitle title="Para onde" />
           <SearchLabel placeholder="Onde quer ir" iconName={"CiLocationOn"} />

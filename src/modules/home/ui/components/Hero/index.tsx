@@ -1,9 +1,8 @@
 import Image from "next/image";
-import { SearchArea } from "@/src/modules/search/ui/components/SearchArea";
 
 export const Hero = () => {
   return (
-    <section className="mt-64 mb-44 md:mb-52 lg:mb-40 2xl:mb-60">
+    <section className="relative">
       <div>
         <Image
           priority
@@ -29,20 +28,18 @@ export const Hero = () => {
             3700×2467,
             3840×2560
           "
-          className="max-h-[900px] h-[95%] absolute rounded-b-3xl top-0 left-0 object-cover -z-20"
+          className="max-h-[900px] rounded-b-3xl object-cover -mt-20 -z-20"
           alt="Imagem de fundo família admirando uma paisagem com vista para um lago."
         />
-        <article className="text-white text-center">
-          <div className="flex-col flex justify-center items-center mb-40 ">
-            <span className="uppercase font-bold text-sm sm:text-base lg:text-xl underline underline-offset-4 decoration-submain">
+        <article className="text-white text-center absolute inset-0 flex items-center justify-center">
+          <div className="flex-col flex justify-center items-center">
+            <span className="uppercase font-bold text-sm sm:text-base lg:text-xl underline underline-offset-4 decoration-main">
               explore, aventure-se, descubra
             </span>
-            <h1 className="font-bold text-4xl sm:text-5xl lg:text-6xl">
-              Encontre sua <br /> próxima{" "}
-              <span className="text-submain">aventura</span>
+            <h1 className="font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+              Encontre sua <br /> próxima aventura
             </h1>
           </div>
-          <SearchArea />
         </article>
       </div>
     </section>

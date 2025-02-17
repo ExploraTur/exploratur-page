@@ -4,8 +4,8 @@ import logo from "@/public/logo.svg";
 
 export const Logo = () => {
   return (
-    <div className="text-lg sm:text-2xl lg:text-3xl font-bold">
-      <Link href="/" className="flex items-center gap-x-">
+    <div className="sm:text-xl lg:text-2xl font-bold">
+      <Link href="/" className="flex items-center">
         <span className="hidden sm:block">Exp</span>{" "}
         <div className="relative left-1 w-6 h-6 sm:w-6 sm:h-10">
           <Image

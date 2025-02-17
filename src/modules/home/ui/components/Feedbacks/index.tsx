@@ -39,16 +39,12 @@ const usersInfo = [
 export const Feedbacks = () => {
   return (
     <section className="w-full pt-36 pb-60 rounded-2xl bg-gradient-to-t from-main to-main-dark ">
-      <div className="pb-10 text-center">
+      <div className="pb-20 text-center">
         <h2
-          className={`${montserrat.className} font-bold text-5xl text-submain`}
+          className={`${montserrat.className} uppercase font-bold underline text-submain`}
         >
           O que dizem nossos exploradores?
         </h2>
-        <p className="text-gray-300 sm:mt-4 mt-2">
-          Média de classificação dos clientes
-        </p>
-        <Ratings />
       </div>
       <Carousel>
         <CarouselContent className="flex justify-start max-w-[70%] xl:max-w-[52%] mx-auto min-w-[290px]">

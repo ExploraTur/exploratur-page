@@ -34,7 +34,7 @@ export const Menu = () => {
           </SheetContent>
         </Sheet>
       ) : (
-        <ul className="text-xs md:text-sm lg:text-base text-gray-700  flex transition font-semibold gap-x-2">
+        <ul className="text-xs md:text-sm lg:text-base text-gray-700 flex transition font-medium gap-x-4">
           {links?.map((obj) => (
             <li key={obj.linkName} className="hover:text-main transition px-1">
               <Link href={obj.src}>{obj.linkName}</Link>

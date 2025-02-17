@@ -6,6 +6,7 @@ import { Header } from "../components/Header";
 import { Hero } from "../components/Hero";
 import { JoinUs } from "../components/JoinUs";
 import { OurServices } from "../components/OurServices";
+import { SearchArea } from "@/src/modules/search/ui/components/SearchArea";
 
 export const HomeLayout = () => {
   return (
@@ -13,6 +14,7 @@ export const HomeLayout = () => {
       <Header />
       <main>
         <Hero />
+        <SearchArea />
         <OurServices />
         <Feedbacks />
         <Gallery />

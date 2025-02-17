@@ -56,7 +56,7 @@ export const driverServicesItems = {
       icon: Star,
       subtitle: "Avaliações e reputação",
       content:
-        "Construa uma reputação sólida e conquiste mais clientes com base em avaliações positivas dos exploradores que você conduziu. Um bom feedback é o melhor marketing",
+        "Construa uma reputação sólida e conquiste mais clientes com base em avaliações positivas dos exploradores que você conduziu. Um bom feedback é o melhor marketing.",
     },
   ],
 };

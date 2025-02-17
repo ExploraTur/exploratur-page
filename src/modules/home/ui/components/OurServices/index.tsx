@@ -5,7 +5,7 @@ import { adventurerServicesItems, driverServicesItems } from "./services-list";
 
 export const OurServices = () => {
   return (
-    <section className="max-w-[1200px] text-center mx-auto px-2 ">
+    <section className="max-w-[1200px] text-center mx-auto px-2 pb-20">
       <h2
         className={`${montserrat.className} uppercase font-bold underline text-submain`}
       >
@@ -20,7 +20,7 @@ export const OurServices = () => {
       <article className="mx-2 my-20">
         <div
           id="#explorers"
-          className="flex flex-wrap items-center justify-center gap-10"
+          className="flex flex-wrap items-center justify-center gap-20 pb-20"
         >
           <OurServicesCard
             src={"/bg.png"}
