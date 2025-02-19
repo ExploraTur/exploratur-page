@@ -20,7 +20,7 @@ export const Services = ({ content }: ServicesProps) => {
         className={`${montserrat.className} relative text-xl self-start font-bold text-neutral-700 mb-4`}
       >
         {content.title}
-        <span className="w-20 h-1 bg-main rounded-full absolute -bottom-4 left-0" />
+        <span className="w-20 h-1 bg-main rounded-full absolute -bottom-2 left-0" />
       </h3>
       {content.items.map((item) => (
         <div key={item.id} className="flex gap-x-6 mb-3">

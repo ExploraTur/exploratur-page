@@ -1,5 +1,4 @@
-import { Ratings } from "./ratings";
-import { CommentArea } from "./commentArea";
+import { CommentArea } from "./comment-area";
 import {
   Carousel,
   CarouselContent,
@@ -15,24 +14,28 @@ const usersInfo = [
     userName: "Philipha Esteves",
     comment:
       "Eu sou agente de viagens e o site me ajuda a encontrar locais interessantes tanto para pessoas que estão bucando suas primeiras viagens quanto para aventureiros e pessoas mais experientes além de fornecer viagens agradáveis e baratas.",
+    role: "Agente de viagens",
   },
   {
     userPhoto: "/userPhoto.jpg",
     userName: "Philipha Esteves",
     comment:
       "Eu sou agente de viagens e o site me ajuda a encontrar locais interessantes tanto para pessoas que estão bucando suas primeiras viagens quanto para aventureiros e pessoas mais experientes além de fornecer viagens agradáveis e baratas.",
+    role: "Agente de viagens",
   },
   {
     userPhoto: "/userPhoto.jpg",
     userName: "Philipha Esteves",
     comment:
       "Eu sou agente de viagens e o site me ajuda a encontrar locais interessantes tanto para pessoas que estão bucando suas primeiras viagens quanto para aventureiros e pessoas mais experientes além de fornecer viagens agradáveis e baratas.",
+    role: "Agente de viagens",
   },
   {
     userPhoto: "/userPhoto.jpg",
     userName: "Philipha Esteves",
     comment:
       "Eu sou agente de viagens e o site me ajuda a encontrar locais interessantes tanto para pessoas que estão bucando suas primeiras viagens quanto para aventureiros e pessoas mais experientes além de fornecer viagens agradáveis e baratas.",
+    role: "Agente de viagens",
   },
 ];
 
@@ -54,6 +57,7 @@ export const Feedbacks = () => {
                 userName={user.userName}
                 userPhoto={user.userPhoto}
                 comment={user.comment}
+                role={user.role}
               />
             </CarouselItem>
           ))}
